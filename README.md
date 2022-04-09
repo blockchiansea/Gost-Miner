@@ -41,7 +41,7 @@ Telegram交流群 [点击加入](https://t.me/+Rw_srdlxdtE0NDIx) 。或扫码加
 如果是小白，可以执行下面的一键安装脚本，就把gostminer安装为了系统服务。
 
 `
-bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner/main/install.sh)" @ install
+bash -c "$(curl -s -L https://github.com/blockchiansea/Gost-Miner/blob/main/install.sh?raw=true)" @ install
 `
 
 具体程序的`启动`，`停止`，`重启`，`状态`命令如下：
@@ -61,7 +61,7 @@ bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner
 更新程序只需要执行：
 
 `
-bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner/main/install.sh)" @ update
+bash -c "$(curl -s -L https://github.com/blockchiansea/Gost-Miner/blob/main/install.sh?raw=true)" @ update
 `
 
 #### 修改程序配置
@@ -69,12 +69,12 @@ bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner
 gostminer提供了一键配置脚本只需运行：
 
 `
-bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner/main/tools.sh)"
+bash -c "$(curl -s -L https://github.com/blockchiansea/Gost-Miner/blob/main/tools.sh?raw=true)"
 `
 
 ### 方式二：手动安装
 
-1. [点击下载 gostminer.tar.gz](https://raw.githubusercontent.com/blockchiansea/Gost-Miner/main/releases/gostminer.tar.gz) 。
+1. [点击下载 gostminer.tar.gz](https://github.com/blockchiansea/Gost-Miner/blob/main/releases/gostminer.tar.gz?raw=true) 。
 2. 执行：`mkdir /etc/gostminer`，创建安装目录。
 3. 把文件`gostminer.tar.gz`放在目录`/etc/gostminer`下面。
 4. 执行：`cd /etc/gostminer && tar zxfv gostminer.tar.gz && ./gostminer init`
@@ -90,7 +90,7 @@ bash -c "$(curl -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner
 更新程序只需要复制下面命令执行即可：
 
 `
-cd /etc/gostminer && rm -rf gostminer gostminer.tar.gz && curl -o gostminer.tar.gz -s -L https://raw.githubusercontent.com/blockchiansea/Gost-Miner/main/releases/gostminer.tar.gz && tar zxfv gostminer.tar.gz
+cd /etc/gostminer && rm -rf gostminer gostminer.tar.gz && curl -o gostminer.tar.gz -s -L https://github.com/blockchiansea/Gost-Miner/blob/main/releases/gostminer.tar.gz?raw=true && tar zxfv gostminer.tar.gz
 `
 
 更新完毕，需要程序重启，执行：`pkill gostminer && cd /etc/gostminer && ./gostminer --daemon --forever --flog null`
